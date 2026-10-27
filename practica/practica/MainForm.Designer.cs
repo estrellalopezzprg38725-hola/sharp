@@ -47,6 +47,7 @@ namespace practica
 			this.btnLimpiar = new System.Windows.Forms.Button();
 			this.lblRespuesta = new System.Windows.Forms.Label();
 			this.btnModulo = new System.Windows.Forms.Button();
+			this.btnCuadratica = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblNum1
@@ -146,11 +147,22 @@ namespace practica
 			this.btnModulo.UseVisualStyleBackColor = true;
 			this.btnModulo.Click += new System.EventHandler(this.BtnModuloClick);
 			// 
+			// btnCuadratica
+			// 
+			this.btnCuadratica.Location = new System.Drawing.Point(355, 112);
+			this.btnCuadratica.Name = "btnCuadratica";
+			this.btnCuadratica.Size = new System.Drawing.Size(94, 39);
+			this.btnCuadratica.TabIndex = 11;
+			this.btnCuadratica.Text = "cuadratica";
+			this.btnCuadratica.UseVisualStyleBackColor = true;
+			this.btnCuadratica.Click += new System.EventHandler(this.BtnCuadraticaClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(572, 354);
+			this.Controls.Add(this.btnCuadratica);
 			this.Controls.Add(this.btnModulo);
 			this.Controls.Add(this.lblRespuesta);
 			this.Controls.Add(this.btnLimpiar);
@@ -167,6 +179,7 @@ namespace practica
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnCuadratica;
 		private System.Windows.Forms.Button btnModulo;
 		private System.Windows.Forms.Label lblRespuesta;
 		private System.Windows.Forms.Button btnLimpiar;

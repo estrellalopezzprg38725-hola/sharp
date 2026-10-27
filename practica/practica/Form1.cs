@@ -28,5 +28,17 @@ namespace practica
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void BtnCalcularX1Y1Click(object sender, EventArgs e)
+		{
+			double a = Convert.ToDouble(txtA.Text);
+			double b = Convert.ToDouble(txtB.Text);
+			double c = Convert.ToDouble(txtC.Text);
+			double d = b*b -4*a*c;
+			double x1 = ( -b + Math.Sqrt(d)) / (2*a);
+			double y1 = (-b - Math.Sqrt(d)) / (2*a);
+			lblResultadoX1.Text=x1.ToString();
+			lblResltadoY2.Text=y1.ToString();
+		}
 	}
 }

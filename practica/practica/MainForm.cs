@@ -80,5 +80,11 @@ namespace practica
 			double rest = num1%num2;
 			lblRespuesta.Text=txt1.Text+"%"+txt2.Text+"="+Convert.ToString(rest);
 		}
+		
+		void BtnCuadraticaClick(object sender, EventArgs e)
+		{
+			Form1 f = new Form1();
+			f.Show();
+		}
 	}
 }
