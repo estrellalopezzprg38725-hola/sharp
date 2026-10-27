@@ -72,5 +72,13 @@ namespace practica
 			txt2.Text="";
 			lblRespuesta.Text="";
 		}
+		
+		void BtnModuloClick(object sender, EventArgs e)
+		{
+			double num1 = Convert.ToDouble(txt1.Text);
+			double num2 = Convert.ToDouble(txt2.Text);
+			double rest = num1%num2;
+			lblRespuesta.Text=txt1.Text+"%"+txt2.Text+"="+Convert.ToString(rest);
+		}
 	}
 }
